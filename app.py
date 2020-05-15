@@ -1,4 +1,6 @@
-# -*- coding: utf-8 -*-
+#ENGI E1006 Final Assignment#
+#Melissa Emerson            #
+#############################
 
 #import statements
 from flask import Flask, render_template
@@ -9,8 +11,9 @@ app = Flask(__name__)
 #static route
 @app.route("/1006")
 def hello():
-    return "1006 homepage"
+    return render_template('index.html')
 
 #start the server
 if __name__ == "__main__":
     app.run()
+    
