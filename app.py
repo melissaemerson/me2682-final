@@ -12,10 +12,10 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     return render_template('index.html')
-@app.route("/page2")
+@app.route("/assignments")
 def page2():
     return render_template('page2.html')
-@app.route("/page3")
+@app.route("/classes")
 def page3():
     return render_template('page3.html')
 
